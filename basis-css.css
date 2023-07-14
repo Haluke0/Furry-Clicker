@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta&family=Almarai:wght@300;400;700&family=Arbutus+Slab&family=Bree+Serif&display=swap');
+:root {
+        --initial-color: rgb(60, 21, 24);       
+        --secondary-color: rgb(105, 20, 14);  
+        --third-color: rgb(164, 66, 0);  
+        --auxilary-color: rgb(213, 137, 54);  
+        --base-color: rgb(242, 243, 174);       
+        --smooth-transition:cubic-bezier(0.46,0.03,0.52,0.96);
+        --jump-transition:cubic-bezier(0.81,-0.27,0.15,1.22);
+    }
+    .title-text{
+        color: rgb(255, 255, 255);
+    }
+    body{
+        display: grid;
+        grid-template-columns: repeat(30, 1fr);
+        margin: 0;
+        min-height: 100%;
+        min-width: 100%;
+    }
+    .left{
+        grid-column-start: 1;
+        grid-column-end: 20;
+        min-height: 100vh;
+        max-height: 100vh;
+        background-color: var(--base-color);
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .upgrades-shop{
+        position: absolute;
+        bottom: -18em;
+        width: 100%;
+        height: 20em;
+        background-color: var(--third-color);
+        transition: var(--jump-transition) bottom 0.7s;
+    }
+    .upgrades-title{
+        position: absolute;
+        top: 0%;
+        height: 2em;
+        background-color: var(--secondary-color);
+        width: 100%;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Bree Serif';
+    }
+
+    .mid{
+        min-height: 100vh;
+        max-height: 100vh;
+        grid-column-start: 20;
+        grid-column-end: 21;
+        background-color: var(--initial-color);
+        background-size: contain;
+        background-repeat: repeat-y;
+        filter: drop-shadow();
+    }
+    .right{
+        height: 100vh;
+        background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.qoFRDWwIjPNdASAbkM0wSQHaHa%26pid%3DApi&f=1&ipt=953c55ec91be1a72a191089b3f83b372d95c646e336d97c0ab0e9c334c2e0931&ipo=images");
+        background-repeat: repeat;
+        background-size: 20% 20%;
+        grid-column-start: 21;
+        grid-column-end: 31;
+        font-family: 'Bree Serif';
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .shop-title{
+        height: clamp(4em, 15vh, 7em);
+        background-color: var(--secondary-color);
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-width: 100%;
+    }
+    .shop-body{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        overflow-y: scroll;
+        height: clamp(calc(100vh - 7em), 85vh, calc(100vh - 4em));
+        width: 100%;
+    }
+    .shop-item{
+        width: 80%;
+        border-radius: 1em;
+        min-height: clamp(3em, 15vh, 4.5em);
+        background-color: var(--auxilary-color);
+        filter: opacity(80%);
+        border: 0.15em black solid;
+        box-shadow: 10px 10px 5px black;
+        margin: 15px;
+        display: flex;
+        align-items: center;
+        font-size: 1.4em;
+        cursor: pointer;
+    }
+    .shadowing {
+        box-shadow: inset 2px 2px 3px rgba(245, 222, 179, 0.05), inset -5px -5px 7px rgba(0, 0, 0, 0.3);
+    }
+    #sell-toggle-box {
+        display: none;
+    }
+    .amount {
+        font-family: "Allerta";
+        position: absolute;
+        font-size: 1.45em;
+        top: -2px;
+        right:15px;
+        color: rgba(43, 43, 43, 0.7);
+        user-select: none;
+    }
+    .display-cost {
+        font-family: "Arbutus Slab";
+        position: absolute;
+        font-size: 1.55em;
+        bottom: 0px;
+        right:7px;
+        color: rgba(43, 43, 43, 0.7);
+        user-select: none;
+    }
+    #souls {
+        margin: 30px;
+    }
+    #sps {
+        margin-top: -20px;
+        font-size: 1.3em;
+        color: black;
+        font-family: "Arbutus Slab";
+    }

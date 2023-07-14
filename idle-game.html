@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <title>Click</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <link rel="stylesheet" href="specific-css.css">
+        <link rel="stylesheet" href="basis-css.css">
+        <link rel="stylesheet" href="innate-element.css">
+    </head>
+    <body onload="onLoad()">
+
+        <div class="left">
+            <div id="souls" class="title-text">0 Souls</div>
+            <div id="sps" class="title-text">0 Souls per second</div>
+            <div id="upgrades-shop" class="upgrades-shop">
+                <div id="upgrades-title" onclick="openUpgrades()" class="upgrades-title shadowing title-text">
+                    <span>Upgrades Shop</span>
+                    <span id="pos-txt" style="position: absolute;left: 20px;font-weight: 900;font-size: x-large;">&#8896;</span>
+                </div>
+            </div>
+        </div>
+        <div class="mid shadowing">
+        </div>
+        <div class="right">
+            <div class="shop-title title-text shadowing">
+                <h1 style="margin-left: 12px; flex: 1;" class="title-text">Shop</h1>
+                <div style="flex: 5;" class="toggle-body">
+                    <div style="margin-bottom: 5px;" class="buy-sell-toggle title-text">
+                        <h3 class="title-text">Buy or Sell</h3>
+                        <div class="buy-sell-box">
+                            <label for="buy-toggle" class="input-container">Buy
+                                <input type="radio" name="buy-sell" id="buy-toggle"  value="1">
+                                <label for="buy-toggle"></label>
+                            </label>
+                            <label for="sell-toggle" class="input-container" >Sell
+                                <input type="radio" name="buy-sell" id="sell-toggle" value="0">
+                                <label for="sell-toggle"></label>
+                            </label>
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 15px;" class="shop-toggle-box">
+                        <div id="buy-toggle-box" class="shopping-toggle">
+                            <label for="buy-1" class="input-container">Buy 1
+                                <input type="radio" name="buy-amount" id="buy-1" checked="checked">
+                                <label for="buy-1"></label>
+                            </label>
+                            <label for="buy-10" class="input-container">Buy 10
+                                <input type="radio" name="buy-amount" id="buy-10">
+                                <label for="buy-10"></label>
+                            </label>
+                            <label for="buy-100" class="input-container">Buy 100
+                                <input type="radio" name="buy-amount" id="buy-100">
+                                <label for="buy-100"></label>
+                            </label>
+                            <label for="buy-max" class="input-container">Buy Max
+                                <input type="radio" name="buy-amount" id="buy-max">
+                                <label for="buy-max"></label>
+                            </label>
+                        </div>
+                        <div id="sell-toggle-box" class="shopping-toggle">
+                            <label for="sell-1" class="input-container">Sell 1
+                                <input type="radio" name="sell-amount" id="sell-1" checked="checked">
+                                <label for="sell-1"></label>
+                            </label>
+                            <label for="sell-10" class="input-container">Sell 10
+                                <input type="radio" name="sell-amount" id="sell-10">
+                                <label for="sell-10"></label>
+                            </label>
+                            <label for="sell-100" class="input-container">Sell 100
+                                <input type="radio" name="sell-amount" id="sell-100">
+                                <label for="sell-100"></label>
+                            </label>
+                            <label for="sell-all" class="input-container">Sell All
+                                <input type="radio" name="sell-amount" id="sell-all">
+                                <label for="sell-all"></label>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="shop-body"  class="shop-body">
+                <div id="candle" onclick="candle_click()" class="shop-item shadowing dropdown-shadow">
+                    <img src="https://jooinn.com/images/candle-27.jpg" alt="Candle">
+                    <h3 class="title-text">Buy Candle</h3>
+                    <div id="display-number-candle" class="amount">0</div>
+                    <div id="display-cost-candle" class="display-cost">20 Souls</div>
+                </div>
+                <div id="gravestone" onclick="gravestone_click()" class="shop-item shadowing dropdown-shadow">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.hJdjUUVM8BIVPi15HDHn8gHaE9%26pid%3DApi&f=1&ipt=92bcb6451182a122e83f090d767e1aac308812ea0492809ee81a680695894bf9&ipo=images" alt="Gravestone">
+                    <h3 class="title-text">Buy Graves</h3>
+                    <div id="display-number-gravestone" class="amount">0</div>
+                    <div id="display-cost-gravestone" class="display-cost">350 Souls</div>
+                </div>
+                <div class="shop-item shadowing dropdown-shadow">Buy Cemetery</div>
+                <div class="shop-item shadowing dropdown-shadow">Buy Resurrection Chamber</div>
+                <div class="shop-item shadowing dropdown-shadow">Buy Demonic Processing Unit (DPU)</div>
+                <div class="shop-item shadowing dropdown-shadow">Buy Gate to Hell</div>
+                <div class="shop-item shadowing dropdown-shadow">Buy Step to Heaven</div>
+                <div class="shop-item shadowing dropdown-shadow"></div>
+                <div class="shop-item shadowing dropdown-shadow"></div>
+                <div class="shop-item shadowing dropdown-shadow"></div>
+                <div class="shop-item shadowing dropdown-shadow"></div>
+            </div>
+
+
+        </div>
+
+
+
+
+        <script src="function-pack.js"></script>
+        <script src="html-functions.js"></script>
+        <script src="idle-script.js"></script>
+
+
+    </body>
+
+</html>

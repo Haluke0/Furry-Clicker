@@ -1,0 +1,7 @@
+input {
+    display: none;
+}
+label {
+    cursor: pointer;
+    transition: width var(--smooth-transition) 0.6s;
+}
