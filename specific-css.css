@@ -65,9 +65,12 @@ label.input-container{
 h3.title-text {
     color: black;
 }
-#souls.title-text{
+#fur.title-text{
     color: black;
     font-size: 6em;
     font-family: "Bree Serif";
     margin-top: -5px;
+}
+#fur.title-text::selection{
+    background-color: none;
 }

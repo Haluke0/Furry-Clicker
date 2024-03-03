@@ -10,14 +10,17 @@
     <body onload="onLoad()">
 
         <div class="left">
-            <div id="souls" class="title-text">0 Souls</div>
-            <div id="sps" class="title-text">0 Souls per second</div>
+            <div id="displayer-holder">
+                <div id="fur" class="title-text">0 Fur</div>
+                <div id="fps" class="title-text">0 Fur per second</div>
+            </div>
             <div id="upgrades-shop" class="upgrades-shop">
                 <div id="upgrades-title" onclick="openUpgrades()" class="upgrades-title shadowing title-text">
                     <span>Upgrades Shop</span>
                     <span id="pos-txt" style="position: absolute;left: 20px;font-weight: 900;font-size: x-large;">&#8896;</span>
                 </div>
             </div>
+            <div onclick="big_fur_click()" id="big-fur"></div>
         </div>
         <div class="mid shadowing">
         </div>
@@ -79,17 +82,17 @@
                 </div>
             </div>
             <div id="shop-body"  class="shop-body">
-                <div id="candle" onclick="candle_click()" class="shop-item shadowing dropdown-shadow">
-                    <img src="https://jooinn.com/images/candle-27.jpg" alt="Candle">
-                    <h3 class="title-text">Buy Candle</h3>
-                    <div id="display-number-candle" class="amount">0</div>
-                    <div id="display-cost-candle" class="display-cost">20 Souls</div>
+                <div id="bean" onclick="bean_click()" class="shop-item shadowing dropdown-shadow">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fec%2Fbf%2F89%2Fecbf89be92ab4086e3e7b12218badbc1.jpg&f=1&nofb=1&ipt=273a091e5c53f7136065d83aace99c096f7c2d32f4dc87a898e5bb8dcbbd12be&ipo=images" alt="Bean">
+                    <h3 class="title-text">Buy Beans</h3>
+                    <div id="display-number-bean" class="amount">0</div>
+                    <div id="display-cost-bean" class="display-cost">20 Fur</div>
                 </div>
-                <div id="gravestone" onclick="gravestone_click()" class="shop-item shadowing dropdown-shadow">
-                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.hJdjUUVM8BIVPi15HDHn8gHaE9%26pid%3DApi&f=1&ipt=92bcb6451182a122e83f090d767e1aac308812ea0492809ee81a680695894bf9&ipo=images" alt="Gravestone">
-                    <h3 class="title-text">Buy Graves</h3>
-                    <div id="display-number-gravestone" class="amount">0</div>
-                    <div id="display-cost-gravestone" class="display-cost">350 Souls</div>
+                <div id="floofer" onclick="floofer_click()" class="shop-item shadowing dropdown-shadow">
+                    <img id="fennec">
+                    <h3 class="title-text">Buy Fennec</h3>
+                    <div id="display-number-floofer" class="amount">0</div>
+                    <div id="display-cost-floofer" class="display-cost">350 Fur</div>
                 </div>
                 <div class="shop-item shadowing dropdown-shadow">Buy Cemetery</div>
                 <div class="shop-item shadowing dropdown-shadow">Buy Resurrection Chamber</div>
