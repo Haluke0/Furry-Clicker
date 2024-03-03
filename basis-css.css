@@ -29,6 +29,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
     .upgrades-shop{
         position: absolute;
@@ -129,12 +130,34 @@
         color: rgba(43, 43, 43, 0.7);
         user-select: none;
     }
-    #souls {
+    #furs {
         margin: 30px;
     }
-    #sps {
+    #fps {
         margin-top: -20px;
         font-size: 1.3em;
         color: black;
         font-family: "Arbutus Slab";
     }
+    #fennec {
+        background-image: url("https://cdn.discordapp.com/attachments/1184856248089333821/1213888868689117234/IMG_1212.png?ex=65f71d1b&is=65e4a81b&hm=b93a31fc2d53958f44c0fcc35c134e8e4ebbc2bfaeac64d001103ccf4ce9bc14&" );
+        background-size: 100% 160%;
+        background-position: 0 -20px;
+    }
+#big-fur {
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.x12loM9foQRWCBLv8wy6uwAAAA%26pid%3DApi&f=1&ipt=ae719240363fb5423b1265f7ac85a6ff705efe45bc13bd91092181ddc6a7ed43&ipo=images");
+    width: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 450px;
+    justify-self: center;
+    cursor: pointer;
+}
+#displayer-holder {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
